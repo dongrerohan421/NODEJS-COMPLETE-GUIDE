@@ -28,3 +28,8 @@ console.log(fruits);
 //Add to the front of an Array
 var newLength = fruits.unshift("Strawberry");
 console.log(fruits);
+
+//Find the index of an item in the Array
+fruits.push("Mango");
+var position = fruits.indexOf("Banana");
+console.log("position of Banana is: " + position);
