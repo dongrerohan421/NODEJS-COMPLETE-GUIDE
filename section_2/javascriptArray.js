@@ -35,7 +35,21 @@ var position = fruits.indexOf("Banana");
 console.log("position of Banana is: " + position);
 console.log(fruits);
 
-
 //Remove an item by index position
 var removeItem = fruits.splice(position, 2); // this is how to remove an item
 console.log(fruits);
+
+//Remove items from an index position
+var vegetables = ["Cabbage", "Turnip", "Raddish", "Carrot"];
+console.log(vegetables);
+console.log("vegetables: " + vegetables);
+
+var pos = 1,
+    n = 2;
+
+var removedItems = vegetables.splice(pos, n);
+// this is how to remove items, n defines the number of items to be removed,
+// from that position(pos) onward to the end of array.
+
+console.log(vegetables);
+console.log(removedItems);
