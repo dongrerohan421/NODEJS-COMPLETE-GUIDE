@@ -20,3 +20,7 @@ console.log(fruits);
 //Remove from the end of an Array
 var last = fruits.pop();
 console.log(fruits);
+
+//Remove from the front of an Array
+var first = fruits.shift();
+console.log(fruits);
