@@ -36,7 +36,7 @@ console.log("position of Banana is: " + position);
 console.log(fruits);
 
 //Remove an item by index position
-var removeItem = fruits.splice(position, 2); // this is how to remove an item
+var removeItem = fruits.splice(position, 1); // this is how to remove an item
 console.log(fruits);
 
 //Remove items from an index position
@@ -53,3 +53,10 @@ var removedItems = vegetables.splice(pos, n);
 
 console.log(vegetables);
 console.log(removedItems);
+
+// Copy an Array
+var shallowCopy = fruits.slice(); // this is how to make a copy
+console.log(fruits);
+console.log(shallowCopy);
+var shallowCopyPos = fruits.slice(0, 1); // this is how to make a copy
+console.log(shallowCopyPos);
