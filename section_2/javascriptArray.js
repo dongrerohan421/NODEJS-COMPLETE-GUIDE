@@ -16,3 +16,7 @@ fruits.forEach(function (item, index, array) {
 //Add to the end of an Array
 var newLength = fruits.push("Orange");
 console.log(fruits);
+
+//Remove from the end of an Array
+var last = fruits.pop();
+console.log(fruits);
