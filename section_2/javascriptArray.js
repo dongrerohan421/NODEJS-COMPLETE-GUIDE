@@ -24,3 +24,7 @@ console.log(fruits);
 //Remove from the front of an Array
 var first = fruits.shift();
 console.log(fruits);
+
+//Add to the front of an Array
+var newLength = fruits.unshift("Strawberry");
+console.log(fruits);
