@@ -12,3 +12,7 @@ console.log(last);
 fruits.forEach(function (item, index, array) {
     console.log("item: " + item, ", index: " + index);
 });
+
+//Add to the end of an Array
+var newLength = fruits.push("Orange");
+console.log(fruits);
