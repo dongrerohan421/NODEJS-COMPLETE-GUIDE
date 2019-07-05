@@ -33,3 +33,9 @@ console.log(fruits);
 fruits.push("Mango");
 var position = fruits.indexOf("Banana");
 console.log("position of Banana is: " + position);
+console.log(fruits);
+
+
+//Remove an item by index position
+var removeItem = fruits.splice(position, 2); // this is how to remove an item
+console.log(fruits);
