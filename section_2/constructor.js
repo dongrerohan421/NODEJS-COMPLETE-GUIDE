@@ -1,3 +1,5 @@
+//source:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor
+
 // The constructor property returns a reference to the Object constructor
 // function that created the instance object.Note that the value of this property is a reference to the
 // function itself, not a string containing the
@@ -74,3 +76,14 @@ for (var i = 0; i < types.length; i++) {
 }
 
 console.log(types.join('\n'));
+
+//Changing the constructor of a function:
+//Mostly this property is used for defining a function as a function-constructor 
+//with further calling it with new and prototype-inherits chain.
+function Parent() {}
+Parent.prototype.parentMethod = function parentMethod() {};
+
+function Child() {}
+Child.prototype = Object.create(Parent.prototype); //re-define child prototype to Parent prototype
+
+Child.prototype.constructor = Child; // return original constructor to Child
