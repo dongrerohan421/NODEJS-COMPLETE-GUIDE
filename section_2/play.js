@@ -59,3 +59,11 @@ console.log(hobbies);
 const copiedArray = [...hobbies];
 console.log('copiedArray:');
 console.log(copiedArray);
+
+//Rest operator ...
+const toArray = (...args) => {
+    return args;
+};
+
+console.log(toArray(1, 2, 3, 4));
+console.log(toArray(1, 2, 3, 4, 7, 8)); //Rest operator allows you to add number of arguments
