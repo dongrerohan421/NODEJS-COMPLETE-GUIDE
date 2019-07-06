@@ -93,3 +93,8 @@ fruits[5] = 'Mango';
 console.log(fruits[5]); // 'mango'
 console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
 console.log(fruits.length); //6
+
+//Increasing the length
+fruits.length = 10;
+console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
+console.log(fruits.length); //10
