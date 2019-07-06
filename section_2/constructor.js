@@ -40,4 +40,37 @@ function Tree(name) {
 
 var theTree = new Tree('Redwood');
 console.log('theTree.constructor is: ' + theTree.constructor);
-console.log('\ntheTree.name is: ' + theTree.name);
+console.log('\ntheTree.name is: ' + theTree.name + '\n\n');
+
+//Changing the constructor of an object:
+//The following example shows how to modify constructor value of generic objects. 
+//Only true, 1 and "test" will not be affected as they have read-only native constructors. 
+//This example shows that it is not always safe to rely on the constructor property of an object.
+function Type() {}
+
+var types = [
+    new Array(),
+    [],
+    new Boolean(),
+    true, // remains unchanged
+    new Date(),
+    new Error(),
+    new Function(),
+    function () {},
+    Math,
+    new Number(),
+    1, // remains unchanged
+    new Object(),
+    {},
+    new RegExp(),
+    /(?:)/,
+    new String(),
+    'text' // remains unchanged
+];
+
+for (var i = 0; i < types.length; i++) {
+    types[i].constructor = Type;
+    types[i] = [types[i].constructor, types[i] instanceof Type, types[i].toString()];
+}
+
+console.log(types.join('\n'));
