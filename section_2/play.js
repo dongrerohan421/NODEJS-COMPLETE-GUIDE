@@ -36,6 +36,13 @@ person.greet();
 console.log(person);
 console.log(person.greet);
 
+//spread operator ...
+const copiedPerson = {
+    ...person
+};
+console.log('copiedPerson: ');
+console.log(copiedPerson);
+
 
 //javascript array defined on [] paranthesis
 const hobbies = ["Sports", "Cooking"];
@@ -44,3 +51,11 @@ const hobbies = ["Sports", "Cooking"];
 // }
 console.log(hobbies.map(hobby => "Hobby " + hobby));
 console.log(hobbies);
+
+hobbies.push("Programming");
+console.log(hobbies);
+
+//spread operator ...
+const copiedArray = [...hobbies];
+console.log('copiedArray:');
+console.log(copiedArray);
