@@ -145,3 +145,13 @@ board[6][4] = ' ';
 console.log(board.join('\n'));
 console.log(board[4][4]);
 console.log(board[6][4]);
+
+//Using an array to tabulate a set of values
+values = [];
+for (var x = 0; x < 10; x++) {
+    values.push([
+        2 ** x,
+        2 * x ** 2
+    ])
+};
+console.table(values);
