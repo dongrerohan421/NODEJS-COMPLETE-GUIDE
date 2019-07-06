@@ -60,3 +60,26 @@ console.log(fruits);
 console.log(shallowCopy);
 var shallowCopyPos = fruits.slice(0, 1); // this is how to make a copy
 console.log(shallowCopyPos);
+
+//Accessing array elements
+var arr = ['this is the first element', 'this is the second element', 'this is the last element'];
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[arr.length - 1]);
+
+// console.log(arr .0); // a syntax error
+var years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];
+// console.log(years .0); // a syntax error
+console.log(years[0]);
+
+// renderer .3 d.setTexture(model, "character.png");// a syntax error
+// renderer['3d'].setTexture(model, 'character.png');
+console.log(years['2'] != years['02']);
+
+var promise = {
+    'var': 'text',
+    'array': [1, 2, 3, 4]
+};
+console.log(promise.var);
+console.log(promise.array);
+console.log(promise);
