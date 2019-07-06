@@ -67,3 +67,28 @@ const toArray = (...args) => {
 
 console.log(toArray(1, 2, 3, 4));
 console.log(toArray(1, 2, 3, 4, 7, 8)); //Rest operator allows you to add number of arguments
+
+
+const fetchData = () => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Done!');
+        }, 1500);
+    });
+    return promise;
+};
+
+setTimeout(() => {
+    console.log('Timer is done!');
+    fetchData()
+        .then(text => {
+            console.log(text);
+            return fetchData();
+        })
+        .then(text2 => {
+            console.log(text2);
+        });
+}, 2000);
+
+console.log('Hello!');
+console.log('Hi!');
