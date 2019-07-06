@@ -83,3 +83,13 @@ var promise = {
 console.log(promise.var);
 console.log(promise.array);
 console.log(promise);
+
+//Relationship between length and numerical properties
+var fruits = [];
+fruits.push('banana', 'apple', 'peach');
+console.log(fruits.length);
+
+fruits[5] = 'Mango';
+console.log(fruits[5]); // 'mango'
+console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
+console.log(fruits.length); //6
