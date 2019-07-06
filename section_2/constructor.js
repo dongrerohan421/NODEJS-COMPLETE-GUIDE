@@ -27,7 +27,17 @@ console.log(a.constructor);
 
 var n = new Number(3);
 n.constructor === Number; // true
-console.log(n.constructor());
+console.log(n.constructor() + '\n');
 
 
-// Examples
+// Examples:
+// Displaying the constructor of an object:
+// The following example creates a constructor, Tree, and an object of that type, theTree. 
+// The example then displays the constructor property for the object theTree.
+function Tree(name) {
+    this.name = name;
+}
+
+var theTree = new Tree('Redwood');
+console.log('theTree.constructor is: ' + theTree.constructor);
+console.log('\ntheTree.name is: ' + theTree.name);
