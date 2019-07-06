@@ -103,3 +103,12 @@ console.log(fruits.length); //10
 fruits.length = 2;
 console.log(Object.keys(fruits)); // ['0', '1']
 console.log(fruits.length); //2
+
+//Creating an array using the result of a match
+// Match one d followed by one or more b's followed by one d
+// Remember matched b's and the following d
+// Ignore case
+var myRE = /d(b+)(d)/i;
+var myArray = myRE.exec('ccdbBdbsbz');
+console.log(myRE);
+console.log(myArray);
