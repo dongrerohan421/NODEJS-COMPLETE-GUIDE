@@ -112,3 +112,13 @@ var myRE = /d(b+)(d)/i;
 var myArray = myRE.exec('ccdbBdbsbz');
 console.log(myRE);
 console.log(myArray);
+
+//Examples:
+//Creating an array
+var msgArray = [];
+msgArray[0] = 'Hello';
+msgArray[99] = 'World';
+if (msgArray.length == 100) {
+    console.log(msgArray[0] + ' ' + msgArray[99]);
+    console.log('The length is 100.');
+}
