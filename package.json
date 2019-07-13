@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-complete-guide",
+  "version": "1.0.0",
+  "description": "Complete NodeJs guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongrerohan421/NODEJS-COMPLETE-GUIDE.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Rohan Dongre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongrerohan421/NODEJS-COMPLETE-GUIDE/issues"
+  },
+  "homepage": "https://github.com/dongrerohan421/NODEJS-COMPLETE-GUIDE#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
