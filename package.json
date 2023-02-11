@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/dongrerohan421/NODEJS-COMPLETE-GUIDE#readme",
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "@types/express": "^4.17.0",
